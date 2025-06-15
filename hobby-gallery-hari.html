@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hobby Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hobby {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hobby:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .hobby img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: transform 0.3s;
+    }
+
+    .hobby:hover img {
+      transform: scale(1.03);
+    }
+
+    .hobby h2 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #444;
+    }
+
+    .hobby p {
+      margin-bottom: 15px;
+      color: #666;
+      flex-grow: 1;
+    }
+
+    .hobby a {
+      display: inline-block;
+      text-decoration: none;
+      color: #6e8efb;
+      font-weight: 600;
+      padding: 8px 15px;
+      border: 2px solid #6e8efb;
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+
+    .hobby a:hover {
+      background-color: #6e8efb;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Hobby Gallery</h1>
+    <p>Here are the activities that bring me joy and fulfillment in my free time.</p>
+  </header>
+
+  <main class="gallery">
+    <section class="hobby">
+      <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Painting" />
+      <h2>Painting</h2>
+      <p>I love expressing my creativity through colors and brush strokes. Watercolor is my current favorite medium for its fluidity and unpredictability.</p>
+      <a href="https://en.wikipedia.org/wiki/Painting" target="_blank">About Painting</a>
+    </section>
+
+    <section class="hobby">
+      <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cycling" />
+      <h2>Cycling</h2>
+      <p>Exploring nature on two wheels keeps me active and energized. I enjoy both road cycling and mountain biking on weekends.</p>
+      <a href="https://www.bicycling.com/" target="_blank">Cycling Tips</a>
+    </section>
+
+    <section class="hobby">
+      <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Gardening" />
+      <h2>Gardening</h2>
+      <p>Working with plants brings me peace and teaches patience. My small urban garden includes herbs, vegetables, and flowering plants.</p>
+      <a href="https://www.gardeningknowhow.com/" target="_blank">Gardening Guide</a>
+    </section>
+
+    <section class="hobby">
+      <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Reading" />
+      <h2>Reading</h2>
+      <p>Books transport me to different worlds. I enjoy fiction, especially fantasy and sci-fi, as well as personal development books.</p>
+      <a href="https://www.goodreads.com/" target="_blank">Book Recommendations</a>
+    </section>
+
+    <section class="hobby">
+      <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cooking" />
+      <h2>Cooking</h2>
+      <p>Experimenting with flavors and techniques is my creative outlet. I especially enjoy making Asian and Mediterranean dishes.</p>
+      <a href="https://www.bbcgoodfood.com/" target="_blank">Recipes</a>
+    </section>
+
+    <section class="hobby">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.QgvzZTfn8y3MP77BgHWIsgHaE8?rs=1&pid=ImgDetMain" alt="Photography" />
+      <h2>Photography</h2>
+      <p>Capturing moments through my lens helps me see the world differently. I focus on nature and street photography.</p>
+      <a href="https://photographylife.com/" target="_blank">Photo Tips</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by HARI!!</p>
+  </footer>
+</body>
+</html>
